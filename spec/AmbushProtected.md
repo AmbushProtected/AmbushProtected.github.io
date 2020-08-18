@@ -1,0 +1,39 @@
+- Projects::
+    - Website
+        - Who's the customer?
+            - Companies and startups who need rapid prototypes to get off the ground floor.
+            - Startups without technical cofounders needing MVP's to raise money.
+                - What do they want?
+                    - Fast, affordable, iterative development.
+                    - Fullstack, all-inclusive technology offering
+                    - Iterative workflow (graphically represented)
+                        - https://yeti.co/services
+                    - Showcase tech stack (icons)
+                    - Big slate slides like [[AngelList]]
+                    - Contact Us
+                        - https://yeti.co/contact/
+        - MVP::
+            - Mockup::
+                - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fmrap%2FUBsenVAnO3.png?alt=media&token=d26c7184-4b6a-42f1-bc9e-2c89b617183e)
+            - ### Splash Page
+                - Mission Mantra
+                    - Go fast, break things, raise money
+                    - Bringing ideas to life
+                    - Zero to One is a lot of fun
+                    - Start at the bottom, now you rich
+                    - Zero to one
+                - What platform's we build on
+                    - Mobile
+                    - Responsive Web
+                    - API's
+                    - Wearables (maybe)
+                    - Icons::
+                        - https://thenounproject.com/term/devices/105109/
+                        - https://thenounproject.com/term/devices/
+                - Illustrate and Describe Workflow
+                    - Our Process: **Agile Slingshot**
+                    - "Iterative workflow (graphically represented)"
+                        - "https://yeti.co/services"
+            - ### "Contact Us"
+                - Inspired By:: "https://yeti.co/contact/"
+                - Custom designed form using Google Form API
