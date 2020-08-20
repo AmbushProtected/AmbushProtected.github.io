@@ -1,5 +1,18 @@
+:root {
+  --main-bg-color: #d7dce0;
+  --main-max-width: 800px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-bg-color);
+}
+
 .landing-page-container {
-  background-color: #d7dce0;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--main-max-width);
 }
 
 .homepage-slogan {
