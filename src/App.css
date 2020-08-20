@@ -1,3 +1,80 @@
-.landing-page-container {
+:root {
+  --main-bg-color: #d7dce0;
+  --main-max-width: 800px;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-bg-color);
+}
+
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--main-max-width);
+}
+
+.homepage-slogan {
+  color: #4b0280;
+  font-size: 2.5rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slogan-line {
+  font-family: 'Balsamiq Sans', sans-serif;
+}
+
+.platforms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.platforms-header {
+  text-align: center;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-size: 1.7rem;
+  color: #4b0280;
+  padding: 1.5rem 0;
+}
+
+.platform-box {
+  border-radius: 4px;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f0f5fa;
+  box-shadow: 0 0 5px #ccc;
+  margin: 1rem;
+}
+
+.platform-title {
+  text-align: center;
+  width: 100%;
+  color: #4b0280;
+  font-family: 'Balsamiq Sans', sans-serif;
+  padding: 0.8rem;
+}
+
+.platform-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 5rem;
+}
+
+.platform-image img {
+  height: 100%;
+}
+
+.platform-text {
+  font-family: 'Montserrat', sans-serif;
+  width: 45%;
+  font-size: 0.8rem;
+}
