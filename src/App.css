@@ -1,14 +1,12 @@
 .landing-page-container {
-  height: 100vh;
-  width: 100vw;
   background-color: #d7dce0;
 }
 
 .homepage-slogan {
   color: #4b0280;
   font-size: 2.5rem;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -22,9 +20,8 @@
 .platforms-container {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  background-color: #d7dce0;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .platforms-intro {
@@ -59,11 +56,13 @@
 .platform-image {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 50%;
+  height: 5rem;
 }
 
 .platform-image img {
-  width: 50%;
+  height: 100%;
 }
 
 .platform-text {
@@ -71,4 +70,3 @@
   width: 45%;
   font-size: 0.8rem;
 }
-
