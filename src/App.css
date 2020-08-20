@@ -19,26 +19,22 @@
   color: #4b0280;
   font-size: 2.5rem;
   height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .slogan-line {
-  width: 100%;
   font-family: 'Balsamiq Sans', sans-serif;
 }
 
 .platforms-container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .platforms-intro {
-  width: 100%;
   text-align: center;
   font-family: 'Balsamiq Sans', sans-serif;
   font-size: 1.7rem;
@@ -49,7 +45,6 @@
 .platform-box {
   border-radius: 4px;
   padding: 1.5rem 0;
-  width: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
