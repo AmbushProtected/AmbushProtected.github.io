@@ -16,4 +16,59 @@
 
 .slogan-line {
   width: 100%;
+  font-family: 'Balsamiq Sans', cursive;
 }
+
+.platforms-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #d7dce0;
+  justify-content: center;
+}
+
+.platforms-intro {
+  width: 100%;
+  text-align: center;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 1.7rem;
+  color: #4b0280;
+  padding: 1.5rem 0;
+}
+
+.platform-box {
+  border-radius: 4px;
+  height: 30%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f0f5fa;
+  box-shadow: 0 0 5px #ccc;
+  margin: 1rem;
+}
+
+.platform-title {
+  text-align: center;
+  width: 100%;
+  color: #4b0280;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+.platform-image {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.platform-image img {
+  width: 50%;
+}
+
+.platform-text {
+  font-family: 'Montserrat', sans-serif;
+  width: 45%;
+  font-size: 0.8rem;
+}
+
