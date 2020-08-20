@@ -14,7 +14,7 @@
 
 .slogan-line {
   width: 100%;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Balsamiq Sans', sans-serif;
 }
 
 .platforms-container {
@@ -27,7 +27,7 @@
 .platforms-intro {
   width: 100%;
   text-align: center;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Balsamiq Sans', sans-serif;
   font-size: 1.7rem;
   color: #4b0280;
   padding: 1.5rem 0;
@@ -49,7 +49,7 @@
   text-align: center;
   width: 100%;
   color: #4b0280;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Balsamiq Sans', sans-serif;
   padding: 0.8rem;
 }
 
