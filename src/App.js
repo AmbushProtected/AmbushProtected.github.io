@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ContactForm from './ContactForm';
 import apiIcon from './api.png';
 import mobile from './mobile.png';
 import responsive from './responsive.png';
@@ -45,6 +46,7 @@ function App() {
           </div>
         </div>
       </div>
+      <ContactForm />
     </div>
   );
 }
