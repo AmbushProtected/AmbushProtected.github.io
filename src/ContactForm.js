@@ -61,6 +61,15 @@ class ContactForm extends Component {
   render() {
     return (
       <div className="contact-form-container">
+        <div className="form-header">CONTACT US</div>
+        <div className="form-copy-container">
+          <div className="form-copy-header">Let's Innovate Together.</div>
+          <div className="form-copy">
+            Need help getting your project from an idea to something tangible?
+            Please fill out the form below for a free consultation. All fields
+            required.
+          </div>
+        </div>
         <form onSubmit={this.handleSubmit} className="form-container">
           <input
             type="text"
