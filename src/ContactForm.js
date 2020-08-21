@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import './ContactForm.css';
 const GOOGLE_FORM_ACTION_URL =
   'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdSq_cLFs5SOpexgDdm-gFT8BNUzfe3l1u41PLCwJcucgDetg/formResponse';
 const GOOGLE_FORM_NAME_ID = 'entry.231727285';
@@ -7,8 +8,6 @@ const GOOGLE_FORM_EMAIL_ID = 'entry.663323343';
 const GOOGLE_FORM_PHONE_ID = 'entry.188861041';
 const GOOGLE_FORM_COMPANY_ID = 'entry.317764043';
 const GOOGLE_FORM_PROJECT_ID = 'entry.356058682';
-
-const CORS_PROXY = 'https://cors-escape.herokuapp.com/';
 
 class ContactForm extends Component {
   constructor() {
@@ -64,35 +63,47 @@ class ContactForm extends Component {
       <div className="contact-form-container">
         <form onSubmit={this.handleSubmit} className="form-container">
           <input
-            type="name"
+            type="text"
             name="name"
             value={this.state.name}
+            placeholder="Full Name*"
+            className="form-short-answer"
             onChange={this.handleChange}
           />
           <input
             type="email"
             name="email"
             value={this.state.email}
+            placeholder="Email*"
+            className="form-short-answer"
             onChange={this.handleChange}
           />
           <input
-            type="phone"
+            type="text"
             name="phone"
             value={this.state.phone}
+            placeholder="Phone Number*"
+            className="form-short-answer"
             onChange={this.handleChange}
           />
           <input
-            type="company"
+            type="text"
             name="company"
             value={this.state.company}
+            placeholder="Company Name*"
+            className="form-short-answer"
             onChange={this.handleChange}
           />
           <textarea
             name="project"
             value={this.state.project}
+            placeholder="Tell us about your project*"
+            className="form-long-answer"
             onChange={this.handleChange}
           />
-          <button type="submit">Submit</button>
+          <button type="submit" className="form-submit">
+            SUBMIT
+          </button>
         </form>
       </div>
     );
