@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import './ContactForm.css';
+import Snackbar from '@material-ui/core/Snackbar';
+import {SnackbarContent} from '@material-ui/core';
 const GOOGLE_FORM_ACTION_URL =
   'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdSq_cLFs5SOpexgDdm-gFT8BNUzfe3l1u41PLCwJcucgDetg/formResponse';
 const GOOGLE_FORM_NAME_ID = 'entry.231727285';
@@ -23,9 +25,44 @@ class ContactForm extends Component {
     };
   }
 
+  checkFields = () => {
+    if (
+      this.state.name.length < 3 ||
+      this.state.phone.length < 10 ||
+      this.state.company.length < 1 ||
+      this.state.project < 1
+    ) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+
+  errorMessage = () => {
+    let message = '';
+    if (this.state.name.length < 3) {
+      message += 'Please fill out your full name.';
+    }
+    if (this.state.phone.length < 10) {
+      message += 'Please provide a valid phone number';
+    }
+    if (this.state.company.length < 0) {
+      message += 'Please provide your company name';
+    }
+    if (this.state.project.length < 1) {
+      message += 'Please provide a project description';
+    }
+    return <div>{message}</div>;
+  };
+
   handleSubmit = e => {
     e.preventDefault();
-    this.sendAnswers();
+    if (this.checkFields()) {
+      this.setState({messageSent: true});
+      this.sendAnswers();
+    } else {
+      this.setState({submitError: true});
+    }
   };
 
   handleChange = e => {
@@ -56,6 +93,10 @@ class ContactForm extends Component {
           sendingMessage: false,
         });
       });
+  };
+
+  handleClose = () => {
+    this.setState({});
   };
 
   render() {
@@ -113,6 +154,24 @@ class ContactForm extends Component {
           <button type="submit" className="form-submit">
             SUBMIT
           </button>
+          <Snackbar
+            open={this.state.messageSent}
+            autoHideDuration={6000}
+            onClose={() => {
+              this.setState({messageSent: null});
+            }}
+          >
+            <SnackbarContent message="Successfully Submitted!" />
+          </Snackbar>
+          <Snackbar
+            open={this.state.submitError}
+            autoHideDuration={6000}
+            onClose={() => {
+              this.setState({submitError: null});
+            }}
+          >
+            <SnackbarContent message="Please see errors above" />
+          </Snackbar>
         </form>
       </div>
     );
