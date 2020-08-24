@@ -11,55 +11,69 @@ const GOOGLE_FORM_PHONE_ID = 'entry.188861041';
 const GOOGLE_FORM_COMPANY_ID = 'entry.317764043';
 const GOOGLE_FORM_PROJECT_ID = 'entry.356058682';
 
+const initialState = {
+  name: '',
+  email: '',
+  phone: '',
+  company: '',
+  project: '',
+  nameError: '',
+  phoneError: '',
+  emailError: '',
+  companyError: '',
+  projectError: '',
+  messageSent: null,
+  messageError: null,
+};
+
 class ContactForm extends Component {
   constructor() {
     super();
-    this.state = {
-      name: '',
-      email: '',
-      phone: '',
-      company: '',
-      project: '',
-      messageSent: null,
-      messageError: null,
-    };
+    this.state = initialState;
   }
 
-  checkFields = () => {
-    if (
-      this.state.name.length < 3 ||
-      this.state.phone.length < 10 ||
-      this.state.company.length < 1 ||
-      this.state.project < 1
-    ) {
-      return false;
-    } else {
-      return true;
-    }
-  };
+  validate = () => {
+    let nameError = '';
+    let emailError = '';
+    let phoneError = '';
+    let companyError = '';
+    let projectError = '';
 
-  errorMessage = () => {
-    let message = '';
-    if (this.state.name.length < 3) {
-      message += 'Please fill out your full name.';
+    if (!this.state.name) {
+      nameError = 'Please provide your name.';
     }
-    if (this.state.phone.length < 10) {
-      message += 'Please provide a valid phone number';
+    if (!this.state.email) {
+      emailError = 'Please provide your email.';
     }
-    if (this.state.company.length < 0) {
-      message += 'Please provide your company name';
+    if (!this.state.phone) {
+      phoneError = 'Please provide your phone number.';
     }
-    if (this.state.project.length < 1) {
-      message += 'Please provide a project description';
+    if (!this.state.company) {
+      companyError = 'Please provide your company name.';
     }
-    return <div>{message}</div>;
+    if (!this.state.project) {
+      projectError = 'Please provide your project description.';
+    }
+
+    if (nameError || emailError || phoneError || companyError || projectError) {
+      this.setState({
+        nameError,
+        emailError,
+        phoneError,
+        companyError,
+        projectError,
+      });
+      return false;
+    }
+    return true;
   };
 
   handleSubmit = e => {
     e.preventDefault();
-    if (this.checkFields()) {
-      this.setState({messageSent: true});
+    if (this.validate()) {
       this.sendAnswers();
+      //snackbar pop up prompt
+      this.setState({messageSent: true});
     } else {
       this.setState({submitError: true});
     }
@@ -80,23 +94,13 @@ class ContactForm extends Component {
     axios
       .post(GOOGLE_FORM_ACTION_URL, formData)
       .then(() => {
-        this.setState({
-          messageSent: true,
-          sendingMessage: false,
-          message: '',
-          email: '',
-        });
+        //clear form
+        this.setState(initialState);
       })
       .catch(() => {
-        this.setState({
-          messageError: true,
-          sendingMessage: false,
-        });
+        console.log('error with form submission');
       });
-  };
-
-  handleClose = () => {
-    this.setState({});
+    this.setState(initialState);
   };
 
   render() {
@@ -120,6 +124,7 @@ class ContactForm extends Component {
             className="form-short-answer"
             onChange={this.handleChange}
           />
+          <div className="form-error">{this.state.nameError}</div>
           <input
             type="email"
             name="email"
@@ -128,6 +133,7 @@ class ContactForm extends Component {
             className="form-short-answer"
             onChange={this.handleChange}
           />
+          <div className="form-error">{this.state.emailError}</div>
           <input
             type="text"
             name="phone"
@@ -136,6 +142,7 @@ class ContactForm extends Component {
             className="form-short-answer"
             onChange={this.handleChange}
           />
+          <div className="form-error">{this.state.phoneError}</div>
           <input
             type="text"
             name="company"
@@ -144,6 +151,7 @@ class ContactForm extends Component {
             className="form-short-answer"
             onChange={this.handleChange}
           />
+          <div className="form-error">{this.state.companyError}</div>
           <textarea
             name="project"
             value={this.state.project}
@@ -151,6 +159,7 @@ class ContactForm extends Component {
             className="form-long-answer"
             onChange={this.handleChange}
           />
+          <div className="form-error">{this.state.projectError}</div>
           <button type="submit" className="form-submit">
             SUBMIT
           </button>
