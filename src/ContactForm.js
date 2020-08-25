@@ -27,8 +27,8 @@ const initialState = {
 };
 
 class ContactForm extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = initialState;
   }
 
