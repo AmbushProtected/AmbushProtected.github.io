@@ -135,7 +135,7 @@ class ContactForm extends Component {
           />
           <div className="form-error">{this.state.emailError}</div>
           <input
-            type="text"
+            type="tel"
             name="phone"
             value={this.state.phone}
             placeholder="Phone Number*"
