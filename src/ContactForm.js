@@ -91,15 +91,8 @@ class ContactForm extends Component {
     formData.append(GOOGLE_FORM_COMPANY_ID, this.state.company);
     formData.append(GOOGLE_FORM_PROJECT_ID, this.state.project);
 
-    axios
-      .post(GOOGLE_FORM_ACTION_URL, formData)
-      .then(() => {
-        //clear form
-        this.setState(initialState);
-      })
-      .catch(() => {
-        console.log('error with form submission');
-      });
+    axios.post(GOOGLE_FORM_ACTION_URL, formData);
+    //hacky submission, form goes through but throws error
     this.setState(initialState);
   };
 
