@@ -23,7 +23,7 @@ const initialState = {
   companyError: '',
   projectError: '',
   submitSuccess: false,
-  messageError: false,
+  submitError: false,
 };
 
 class ContactForm extends Component {
