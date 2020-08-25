@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ContactForm from './ContactForm';
+import Navbar from './Navbar.js';
 import apiIcon from './api.png';
 import mobile from './mobile.png';
 import responsive from './responsive.png';
@@ -8,6 +9,7 @@ import responsive from './responsive.png';
 function App() {
   return (
     <div className="landing-page-container">
+      <Navbar />
       <div className="homepage-slogan">
         <div className="slogan-line">Go fast.</div>
         <div className="slogan-line">Break things.</div>
