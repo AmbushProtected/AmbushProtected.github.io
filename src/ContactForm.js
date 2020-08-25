@@ -163,25 +163,25 @@ class ContactForm extends Component {
           <button type="submit" className="form-submit">
             SUBMIT
           </button>
-          <Snackbar
-            open={this.state.messageSent}
-            autoHideDuration={6000}
-            onClose={() => {
-              this.setState({messageSent: null});
-            }}
-          >
-            <SnackbarContent message="Successfully Submitted!" />
-          </Snackbar>
-          <Snackbar
-            open={this.state.submitError}
-            autoHideDuration={6000}
-            onClose={() => {
-              this.setState({submitError: null});
-            }}
-          >
-            <SnackbarContent message="Please see errors above" />
-          </Snackbar>
         </form>
+        <Snackbar
+          open={this.state.messageSent}
+          autoHideDuration={6000}
+          onClose={() => {
+            this.setState({messageSent: false});
+          }}
+        >
+          <SnackbarContent message="Successfully Submitted!" />
+        </Snackbar>
+        <Snackbar
+          open={this.state.submitError}
+          autoHideDuration={6000}
+          onClose={() => {
+            this.setState({submitError: false});
+          }}
+        >
+          <SnackbarContent message="Please see errors above" />
+        </Snackbar>
       </div>
     );
   }
