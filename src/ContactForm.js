@@ -106,7 +106,7 @@ class ContactForm extends Component {
   render() {
     return (
       <div className="contact-form-container">
-        <div className="form-header">CONTACT US</div>
+        <div className="section-header">CONTACT US</div>
         <div className="form-copy-container">
           <div className="form-copy-header">Let's Innovate Together.</div>
           <div className="form-copy">

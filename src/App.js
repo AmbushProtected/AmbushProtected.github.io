@@ -14,7 +14,7 @@ function App() {
         <div className="slogan-line">raise money</div>
       </div>
       <div className="platforms-container">
-        <div className="platforms-header">Services we offer</div>
+        <div className="section-header">Services we offer</div>
         <div className="platform-box">
           <div className="platform-title">Mobile</div>
           <div className="platform-image">
