@@ -22,7 +22,7 @@ const initialState = {
   emailError: '',
   companyError: '',
   projectError: '',
-  messageSent: null,
+  submitSuccess: null,
   messageError: null,
 };
 
@@ -73,7 +73,7 @@ class ContactForm extends Component {
     if (this.validate()) {
       this.sendAnswers();
       //snackbar pop up prompt
-      this.setState({messageSent: true});
+      this.setState({submitSuccess: true});
     } else {
       this.setState({submitError: true});
     }
@@ -158,10 +158,10 @@ class ContactForm extends Component {
           </button>
         </form>
         <Snackbar
-          open={this.state.messageSent}
+          open={this.state.submitSuccess}
           autoHideDuration={6000}
           onClose={() => {
-            this.setState({messageSent: false});
+            this.setState({submitSuccess: false});
           }}
         >
           <SnackbarContent message="Successfully Submitted!" />
