@@ -22,8 +22,8 @@ const initialState = {
   emailError: '',
   companyError: '',
   projectError: '',
-  submitSuccess: null,
-  messageError: null,
+  submitSuccess: false,
+  messageError: false,
 };
 
 class ContactForm extends Component {
