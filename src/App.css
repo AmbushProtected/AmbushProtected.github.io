@@ -32,14 +32,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
-.platforms-header {
+.section-header {
   text-align: center;
   font-family: 'Balsamiq Sans', sans-serif;
   font-size: 1.7rem;
   color: #4b0280;
   padding: 1.5rem 0;
+  text-transform: uppercase;
 }
 
 .platform-box {

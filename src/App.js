@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ContactForm from './ContactForm';
 import apiIcon from './api.png';
 import mobile from './mobile.png';
 import responsive from './responsive.png';
@@ -13,7 +14,7 @@ function App() {
         <div className="slogan-line">raise money</div>
       </div>
       <div className="platforms-container">
-        <div className="platforms-header">Services we offer</div>
+        <div className="section-header">Services we offer</div>
         <div className="platform-box">
           <div className="platform-title">Mobile</div>
           <div className="platform-image">
@@ -45,6 +46,7 @@ function App() {
           </div>
         </div>
       </div>
+      <ContactForm />
     </div>
   );
 }
