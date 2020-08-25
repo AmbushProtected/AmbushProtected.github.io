@@ -4,12 +4,12 @@ import './ContactForm.css';
 import Snackbar from '@material-ui/core/Snackbar';
 import {SnackbarContent} from '@material-ui/core';
 const GOOGLE_FORM_ACTION_URL =
-  'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdSq_cLFs5SOpexgDdm-gFT8BNUzfe3l1u41PLCwJcucgDetg/formResponse';
-const GOOGLE_FORM_NAME_ID = 'entry.231727285';
-const GOOGLE_FORM_EMAIL_ID = 'entry.663323343';
-const GOOGLE_FORM_PHONE_ID = 'entry.188861041';
-const GOOGLE_FORM_COMPANY_ID = 'entry.317764043';
-const GOOGLE_FORM_PROJECT_ID = 'entry.356058682';
+  'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeT2crUApE1U4_ZsUY7rGpS1Hni9n5xDWKshHGQ1Y-T4wdLNg/formResponse?embedded=true';
+const GOOGLE_FORM_NAME_ID = 'entry.2005620554';
+const GOOGLE_FORM_EMAIL_ID = 'entry.1073660516';
+const GOOGLE_FORM_PHONE_ID = 'entry.1166974658';
+const GOOGLE_FORM_COMPANY_ID = 'entry.2095836242';
+const GOOGLE_FORM_PROJECT_ID = 'entry.1309622692';
 
 const initialState = {
   name: '',
