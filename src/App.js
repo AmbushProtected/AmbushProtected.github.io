@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="landing-page-container">
       <div className="homepage-slogan">
-        <div className="slogan-line">Go fast,</div>
-        <div className="slogan-line">break things,</div>
-        <div className="slogan-line">raise money</div>
+        <div className="slogan-line">Go fast.</div>
+        <div className="slogan-line">Break things.</div>
+        <div className="slogan-line">Raise money.</div>
       </div>
       <div className="platforms-container">
         <div className="section-header">Services we offer</div>
