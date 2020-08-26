@@ -13,7 +13,7 @@ const ScrollLink = props => {
       offset={props.offset || -70}
       duration={props.duration || 500}
     >
-      {props.name}
+      {props.children}
     </Link>
   );
 };
