@@ -8,7 +8,7 @@ import responsive from './responsive.png';
 
 function App() {
   return (
-    <div className="landing-page-container">
+    <div className="landing-page-container" id="main">
       <Navbar />
       <div className="homepage-slogan">
         <div className="slogan-line">Go fast.</div>
