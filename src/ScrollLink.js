@@ -6,7 +6,7 @@ class ScrollLink extends Component {
   render() {
     return (
       <Link
-        className={this.props.styling}
+        className={this.props.className}
         activeClass="active"
         to={this.props.location}
         spy={true}

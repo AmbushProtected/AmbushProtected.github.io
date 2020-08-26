@@ -15,7 +15,7 @@ function App() {
           <div className="slogan-line">Break things.</div>
           <div className="slogan-line">Raise money.</div>
           <Scrollink
-            styling="contact-cta"
+            className="contact-cta"
             location="contact"
             name="Contact Us"
           ></Scrollink>

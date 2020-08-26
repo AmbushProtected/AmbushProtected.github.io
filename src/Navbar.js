@@ -7,12 +7,12 @@ class Navbar extends Component {
     return (
       <div className="navbar-container">
         <ScrollLink
-          styling="navbar-content"
+          className="navbar-content"
           location="main"
           name="Ambush Protected"
         ></ScrollLink>
         <ScrollLink
-          styling="navbar-content"
+          className="navbar-content"
           location="contact"
           name="Contact Us"
         ></ScrollLink>
