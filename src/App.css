@@ -15,6 +15,17 @@
   max-width: var(--main-max-width);
 }
 
+.contact-cta {
+  background-color: #4b0280;
+  width: 50%;
+  padding: 1rem;
+  color: #d7dce0;
+  font-size: 20px;
+  margin: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
 .homepage-slogan {
   color: #4b0280;
   font-size: 2.5rem;

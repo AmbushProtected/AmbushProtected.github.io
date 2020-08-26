@@ -5,6 +5,7 @@ import Navbar from './Navbar.js';
 import apiIcon from './api.png';
 import mobile from './mobile.png';
 import responsive from './responsive.png';
+import {Link} from 'react-scroll';
 
 function App() {
   return (
@@ -14,6 +15,17 @@ function App() {
         <div className="slogan-line">Go fast.</div>
         <div className="slogan-line">Break things.</div>
         <div className="slogan-line">Raise money.</div>
+        <Link
+          className="contact-cta"
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Contact Us
+        </Link>
       </div>
       <div className="platforms-container">
         <div className="section-header">Services we offer</div>
