@@ -1,33 +1,16 @@
 import React, {Component} from 'react';
-import './Navbar.css';
-import {Link} from 'react-scroll';
+import ScrollLink from './ScrollLink.js';
 
 class Navbar extends Component {
   render() {
     return (
       <div className="navbar-container">
-        <Link
-          className="navbar-content"
-          activeClass="active"
-          to="main"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
+        <ScrollLink className="navbar-content" to="main">
           Ambush Protected
-        </Link>
-        <Link
-          className="navbar-content"
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
+        </ScrollLink>
+        <ScrollLink className="navbar-content" to="contact">
           Contact Us
-        </Link>
+        </ScrollLink>
       </div>
     );
   }
