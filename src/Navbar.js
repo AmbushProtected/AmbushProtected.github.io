@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './Navbar.css';
 import ScrollLink from './ScrollLink.js';
 
 class Navbar extends Component {
