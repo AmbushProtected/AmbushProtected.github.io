@@ -3,7 +3,7 @@ import './App.css';
 import ContactForm from './ContactForm';
 import Navbar from './Navbar.js';
 import Platforms from './Platforms.js';
-import {Link} from 'react-scroll';
+import Scrollink from './ScrollLink.js';
 
 function App() {
   return (
@@ -14,17 +14,11 @@ function App() {
           <div className="slogan-line">Go fast.</div>
           <div className="slogan-line">Break things.</div>
           <div className="slogan-line">Raise money.</div>
-          <Link
-            className="contact-cta"
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Contact Us
-          </Link>
+          <Scrollink
+            styling="contact-cta"
+            location="contact"
+            name="Contact Us"
+          ></Scrollink>
         </div>
         <Platforms />
         <ContactForm />
