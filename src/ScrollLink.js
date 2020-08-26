@@ -8,10 +8,10 @@ const ScrollLink = props => {
       className={props.className}
       activeClass="active"
       to={props.to}
-      spy={true}
-      smooth={true}
-      offset={-70}
-      duration={500}
+      spy={props.spy || true}
+      smooth={props.smooth || true}
+      offset={props.offset || -70}
+      duration={props.duration || 500}
     >
       {props.name}
     </Link>
