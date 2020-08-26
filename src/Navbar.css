@@ -3,8 +3,10 @@
   height: 9vh;
   background: #38393b;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   border-bottom: 1px #38393b solid;
+  position: fixed;
 }
 
 .navbar-content {
