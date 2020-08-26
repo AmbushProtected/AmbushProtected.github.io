@@ -1,0 +1,16 @@
+.navbar-container {
+  width: 100%;
+  height: 9vh;
+  background: #38393b;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px black solid;
+  position: fixed;
+  min-height: 40px;
+}
+
+.navbar-content {
+  color: #f0f5fa;
+}
+
