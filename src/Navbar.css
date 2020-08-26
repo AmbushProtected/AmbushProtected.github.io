@@ -7,6 +7,7 @@
   justify-content: space-around;
   border-bottom: 1px #38393b solid;
   position: fixed;
+  min-height: 40px;
 }
 
 .navbar-content {
