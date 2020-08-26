@@ -1,6 +1,14 @@
 .navbar-container {
-  width: 100;
+  width: 100%;
   height: 9vh;
-  background: red;
+  background: #38393b;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px #38393b solid;
+}
+
+.navbar-content {
+  padding: 1rem;
+  color: #f0f5fa;
 }
 
