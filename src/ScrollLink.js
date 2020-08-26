@@ -1,23 +1,21 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Navbar.css';
 import {Link} from 'react-scroll';
 
-class ScrollLink extends Component {
-  render() {
-    return (
-      <Link
-        className={this.props.className}
-        activeClass="active"
-        to={this.props.location}
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
-        {this.props.name}
-      </Link>
-    );
-  }
-}
+const ScrollLink = props => {
+  return (
+    <Link
+      className={props.className}
+      activeClass="active"
+      to={props.to}
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={500}
+    >
+      {props.name}
+    </Link>
+  );
+};
 
 export default ScrollLink;
