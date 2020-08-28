@@ -4,6 +4,7 @@ import ContactForm from './ContactForm';
 import Navbar from './Navbar.js';
 import Platforms from './Platforms.js';
 import Scrollink from './ScrollLink.js';
+import AgileSlingshot from './AgileSlingshot.js';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           </Scrollink>
         </div>
         <Platforms />
+        <AgileSlingshot />
         <ContactForm />
       </div>
     </div>

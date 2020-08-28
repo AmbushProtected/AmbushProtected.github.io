@@ -1,0 +1,19 @@
+.agile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.agile-overview {
+}
+
+.agile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.agile-box-header {
+  font-size: 1.2rem;
+}
