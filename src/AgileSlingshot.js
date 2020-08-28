@@ -1,5 +1,6 @@
 import React from 'react';
 import './AgileSlingshot.css';
+import responsive from './responsive.png';
 
 const AgileSlingshot = () => {
   return (
@@ -11,6 +12,9 @@ const AgileSlingshot = () => {
       </div>
       <div className="agile-box">
         <div className="agile-box-header">Discovery and Ideation</div>
+        <div className="agile-image">
+          <img src={responsive} alt="" />
+        </div>
         <div className="agile-box-copy">
           This stage is crucial in the build as we identify key concepts the
           customer wants in the finished product. We want to find your style and
@@ -19,6 +23,9 @@ const AgileSlingshot = () => {
       </div>
       <div className="agile-box">
         <div className="agile-box-header">Scaffolding</div>
+        <div className="agile-image">
+          <img src={responsive} alt="" />
+        </div>
         <div className="agile-box-copy">
           We want to build the barebones version of your project. In this stage
           we aim at building quickly to quickly identify if we are heading in
@@ -27,6 +34,9 @@ const AgileSlingshot = () => {
       </div>
       <div className="agile-box">
         <div className="agile-box-header">Production</div>
+        <div className="agile-image">
+          <img src={responsive} alt="" />
+        </div>
         <div className="agile-box-copy">
           Once we confirm that our intial design is to your liking, we continue
           with the build. Adding polish and refinement, we push out a concrete
