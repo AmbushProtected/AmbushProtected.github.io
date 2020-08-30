@@ -43,6 +43,8 @@
 
 .contact-cta {
   background-color: #4b0280;
+  font-family: 'Fugaz One', sans-serif;
+  text-transform: uppercase;
   width: 50%;
   padding: 1rem;
   color: #d7dce0;
@@ -60,10 +62,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  z-index: 1;
 }
 
 .slogan-line {
-  font-family: 'Balsamiq Sans', sans-serif;
+  font-family: 'Fugaz One', sans-serif;
+  font-weight: 700;
 }
 
 .platforms-container {
@@ -75,7 +79,7 @@
 
 .section-header {
   text-align: center;
-  font-family: 'Balsamiq Sans', sans-serif;
+  font-family: 'Fugaz One', sans-serif;
   font-size: 1.7rem;
   color: #4b0280;
   padding: 1.5rem 0;
@@ -97,7 +101,7 @@
   text-align: center;
   width: 100%;
   color: #4b0280;
-  font-family: 'Balsamiq Sans', sans-serif;
+  font-family: 'Fugaz One', sans-serif;
   padding: 0.8rem;
 }
 
@@ -114,7 +118,7 @@
 }
 
 .platform-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 45%;
   font-size: 0.8rem;
 }
