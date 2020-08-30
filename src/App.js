@@ -10,8 +10,10 @@ function App() {
   return (
     <div className="app-container">
       <Navbar />
+      <div className="hero-text-background"></div>
       <div className="landing-page-container" id="main">
         <div className="homepage-slogan">
+          <div className="hero-text-background-fade"></div>
           <div className="slogan-line">Go fast.</div>
           <div className="slogan-line">Break things.</div>
           <div className="slogan-line">Raise money.</div>
