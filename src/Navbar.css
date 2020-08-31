@@ -41,4 +41,8 @@
   .navbar-logo-name {
     display: none;
   }
+
+  .logo {
+    margin: none;
+  }
 }
