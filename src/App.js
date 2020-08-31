@@ -18,7 +18,7 @@ function App() {
           <div className="slogan-line">Break things.</div>
           <div className="slogan-line">Raise money.</div>
           <Scrollink className="contact-cta" to="contact">
-            Contact Us
+            Let's Go
           </Scrollink>
         </div>
         <Platforms />
