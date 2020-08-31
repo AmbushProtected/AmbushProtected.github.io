@@ -18,9 +18,22 @@
   font-weight: 700;
 }
 
-.navbar-logo {
+.navbar-logo-container {
+  display: flex;
+  height: 9vh;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  height: 100%;
+  margin-right: 2rem;
+}
+
+.navbar-logo-name {
   color: #4b0280;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   cursor: pointer;
 }
+

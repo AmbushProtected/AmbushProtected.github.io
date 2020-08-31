@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import ScrollLink from './ScrollLink.js';
+import logo from './logo.png';
 
 class Navbar extends Component {
   render() {
     return (
       <div className="navbar-container">
-        <ScrollLink className="navbar-logo" to="main">
-          Ambush Protected
+        <ScrollLink className="navbar-logo-container" to="main">
+          <img src={logo} alt="" className="logo" />
+          <div className="navbar-logo-name">Ambush Protected</div>
         </ScrollLink>
         <ScrollLink className="navbar-content" to="contact">
           Contact Us
