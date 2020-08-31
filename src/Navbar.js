@@ -10,7 +10,7 @@ class Navbar extends Component {
           <img src={logo} alt="" className="logo" />
           <div className="navbar-content">Ambush Protected</div>
         </ScrollLink>
-        <ScrollLink className="navbar-content" to="contact">
+        <ScrollLink className="navbar-content navbar-logo-name" to="contact">
           Contact Us
         </ScrollLink>
       </div>
