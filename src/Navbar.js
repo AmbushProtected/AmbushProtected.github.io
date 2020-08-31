@@ -5,7 +5,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar-container">
-        <ScrollLink className="navbar-content" to="main">
+        <ScrollLink className="navbar-logo" to="main">
           Ambush Protected
         </ScrollLink>
         <ScrollLink className="navbar-content" to="contact">
