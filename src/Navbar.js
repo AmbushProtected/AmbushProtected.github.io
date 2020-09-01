@@ -8,9 +8,11 @@ class Navbar extends Component {
       <div className="navbar-container">
         <ScrollLink className="navbar-logo-container" to="main">
           <img src={logo} alt="" className="logo" />
-          <div className="navbar-content">Ambush Protected</div>
+          <div className="navbar-content navbar-logo-name">
+            Ambush Protected
+          </div>
         </ScrollLink>
-        <ScrollLink className="navbar-content navbar-logo-name" to="contact">
+        <ScrollLink className="navbar-content" to="contact">
           Contact Us
         </ScrollLink>
       </div>
