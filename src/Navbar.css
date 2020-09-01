@@ -1,17 +1,41 @@
 .navbar-container {
   width: 100%;
   height: 9vh;
-  background: #38393b;
+  background: #d7dce0;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px black solid;
   position: fixed;
   min-height: 40px;
+  z-index: 100;
+  box-shadow: 0 2px 2px -2px #ccc;
 }
 
 .navbar-content {
-  color: #f0f5fa;
+  color: #4b0280;
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
+.navbar-logo-container {
+  display: flex;
+  height: 9vh;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  height: 100%;
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-logo-name {
+    display: none;
+  }
+
+  .logo {
+    margin: none;
+  }
+}
